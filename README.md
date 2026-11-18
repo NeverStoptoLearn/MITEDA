@@ -72,7 +72,19 @@ python -m pytest -q
 
 ## Citation
 
-Please cite the linked paper when using this code. Machine-readable citation metadata is provided in `CITATION.cff`.
+If you use this code in your research, please cite:
+
+```bibtex
+@article{zhou2027miteda,
+  title   = {Mutual information-assisted estimation of distribution algorithm for groundwater contamination monitoring well optimization},
+  author  = {Zhou, Zhengchen and Yan, Xuesong and Xie, Wenqi},
+  journal = {Expert Systems with Applications},
+  volume  = {333},
+  pages   = {133988},
+  year    = {2027},
+  doi     = {10.1016/j.eswa.2026.133988}
+}
+```
 
 ## Contact
 
