@@ -56,8 +56,6 @@ This implementation builds on the following open-source software. We thank their
 
 AdePy is distributed under the [MIT License](https://github.com/cneyens/adepy/blob/main/LICENSE); pymoo uses the [Apache License 2.0](https://github.com/anyoptimization/pymoo/blob/0.6.1.3/LICENSE). Dependencies retain their upstream licenses.
 
-The included example evaluates concentrations through AdePy. It does not import [FloPy](https://flopy.readthedocs.io/en/stable/) or launch MODFLOW. FloPy-based modeling scripts are not included in this repository.
-
 The software and framework references below supplement the research-paper citation in the Citation section:
 
 ```bibtex
