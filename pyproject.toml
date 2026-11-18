@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "miteda"
+version = "0.1.0"
+description = "Refactored research code for MITEDA"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = ["numpy==1.26.4", "scipy==1.13.1", "pymoo==0.6.1.3", "scikit-learn==1.5.2", "adepy==0.2.0", "matplotlib==3.9.4"]
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.5", "nbformat==5.10.4", "build", "jupyterlab"]
+
+[project.scripts]
+miteda = "miteda.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,57 @@
+{
+  "problem": {
+    "search_area": [
+      [
+        0,
+        100
+      ],
+      [
+        0,
+        100
+      ]
+    ],
+    "observation_times": [
+      10,
+      30
+    ],
+    "source_scenarios": [
+      [
+        20,
+        20,
+        80,
+        1
+      ],
+      [
+        50,
+        50,
+        80,
+        1
+      ],
+      [
+        80,
+        80,
+        80,
+        1
+      ]
+    ],
+    "hydro_scenarios": [
+      {
+        "v": 1.0,
+        "n": 0.25,
+        "al": 30,
+        "ah": 6,
+        "B": 100
+      }
+    ],
+    "min_distance": 10,
+    "n_wells": 4,
+    "min_wells": 2,
+    "cost_per_well": 1
+  },
+  "optimizer": {
+    "population": 12,
+    "elite_size": 8,
+    "generations": 3,
+    "runs": 1
+  }
+}

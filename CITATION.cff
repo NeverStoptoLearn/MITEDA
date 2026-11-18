@@ -1,0 +1,33 @@
+{
+  "cff-version": "1.2.0",
+  "message": "Please cite the paper associated with this software.",
+  "title": "MITEDA",
+  "version": "0.1.0",
+  "type": "software",
+  "authors": [
+    {
+      "family-names": "Zhou",
+      "given-names": "Zhengchen",
+      "orcid": "https://orcid.org/0009-0005-0160-1988"
+    }
+  ],
+  "preferred-citation": {
+    "type": "article",
+    "title": "Mutual information-assisted estimation of distribution algorithm for groundwater contamination monitoring well optimization",
+    "doi": "10.1016/j.eswa.2026.133988",
+    "authors": [
+      {
+        "family-names": "Zhou",
+        "given-names": "Zhengchen"
+      },
+      {
+        "family-names": "Yan",
+        "given-names": "Xuesong"
+      },
+      {
+        "family-names": "Xie",
+        "given-names": "Wenqi"
+      }
+    ]
+  }
+}
