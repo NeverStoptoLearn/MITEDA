@@ -41,6 +41,44 @@ Activate with `.venv\Scripts\activate` on Windows or `source .venv/bin/activate`
 python -m pip install -e ".[dev]"
 ```
 
+## Third-party software and acknowledgments
+
+This implementation builds on the following open-source software. We thank their authors and contributors.
+
+| Software | Version | Use in this repository |
+| --- | --- | --- |
+| [AdePy](https://github.com/cneyens/adepy) | 0.2.0 | The `adepy.uniform.point2` analytical concentration solution used by `transport.py` |
+| [pymoo](https://pymoo.org/) | 0.6.1.3 | Problem and population interfaces, constrained rank-and-crowding survival, and nondominated sorting |
+| [scikit-learn](https://scikit-learn.org/) | 1.5.2 | Mutual-information estimation and conditional regression models |
+| [NumPy](https://numpy.org/) | 1.26.4 | Numerical arrays and sampling |
+| [SciPy](https://scipy.org/) | 1.13.1 | Hungarian matching and pairwise distances |
+| [Matplotlib](https://matplotlib.org/) | 3.9.4 | Result visualization |
+
+AdePy is distributed under the [MIT License](https://github.com/cneyens/adepy/blob/main/LICENSE); pymoo uses the [Apache License 2.0](https://github.com/anyoptimization/pymoo/blob/0.6.1.3/LICENSE). Dependencies retain their upstream licenses.
+
+The included example evaluates concentrations through AdePy. It does not import [FloPy](https://flopy.readthedocs.io/en/stable/) or launch MODFLOW. FloPy-based modeling scripts are not included in this repository.
+
+The software and framework references below supplement the research-paper citation in the Citation section:
+
+```bibtex
+@software{adepy,
+  author  = {Neyens, Cas},
+  title   = {{AdePy}: Analytical solutions for solute transport in groundwater with Python},
+  version = {0.2.0},
+  url     = {https://github.com/cneyens/adepy}
+}
+
+@article{blank2020pymoo,
+  author  = {Blank, Julian and Deb, Kalyanmoy},
+  title   = {pymoo: Multi-Objective Optimization in Python},
+  journal = {IEEE Access},
+  volume  = {8},
+  pages   = {89497--89509},
+  year    = {2020},
+  doi     = {10.1109/ACCESS.2020.2990567}
+}
+```
+
 ## Run
 
 From the project root:
